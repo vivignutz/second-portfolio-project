@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-    width: 1500px;
+    width: 1552px;
     /* 160 px cada + 5 entre cards x 10 cards = 1645 */
     height: 495px;
     /* 240 px cada + 5 entre cards x 2 fileiras = 495 */
@@ -52,8 +52,6 @@ body {
 }
 
 .front {
-    background: url("../images/1.png");
-    /* example, img for test */
     transform: rotateY(-180deg);
 }
 
