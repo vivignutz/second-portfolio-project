@@ -48,13 +48,13 @@ body {
 }
 
 .back.flipped {
-    transform: rotateY("180deg");
+    transform: rotateY(180deg);
 }
 
 .front {
     background: url("../images/1.png");
     /* example, img for test */
-    transform: rotateY("-180deg");
+    transform: rotateY(-180deg);
 }
 
 .card:hover {

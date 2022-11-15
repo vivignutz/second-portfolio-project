@@ -1,3 +1,15 @@
+//** array for all images and respective texts */
+let array = [];
+
+for (let i = 0; i < 16; i++) {
+    let img = {
+        src: "img/" + i + ".png",
+        id: i % 8
+    };
+    images.push(img);
+}
+console.log(images);
+
 //** anonymous function for an immediately start  */
 (function () {
     startGame();
