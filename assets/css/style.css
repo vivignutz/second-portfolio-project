@@ -9,22 +9,26 @@ body {
 }
 
 #container {
-    width: 1645px;
+    width: 1500px;
     /* 160 px cada + 5 entre cards x 10 cards = 1645 */
     height: 495px;
     /* 240 px cada + 5 entre cards x 2 fileiras = 495 */
     border: 1px solid #4c4c4c;
     position: relative;
-    margin: 10px 10px;
+    margin: 10px auto;
     border-radius: 10px;
     background-color: #89730e;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .card {
     width: 160px;
     height: 240px;
-    position: absolute;
-    /* important for JS */
+    position: relative;
+    margin: 2px auto;
+    flex-shrink: 0;
+    /* pra nao encolher */
     border-radius: 10px;
 }
 
