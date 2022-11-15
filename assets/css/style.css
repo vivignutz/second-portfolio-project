@@ -30,6 +30,7 @@ body {
     flex-shrink: 0;
     /* pra nao encolher */
     border-radius: 10px;
+    perspective: 600px;
 }
 
 /* confirguration to all cards front and back */
@@ -38,8 +39,26 @@ body {
     height: 100%;
     position: absolute;
     border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
 }
 
 .back {
     background: url("../images/back.png");
+}
+
+.back.flipped {
+    transform: rotateY("180deg");
+}
+
+.front {
+    background: url("../images/1.png");
+    /* example, img for test */
+    transform: rotateY("-180deg");
+}
+
+.card:hover {
+    box-shadow: 0 0 15px #56562e;
+    /* dist.x = 0, dist y=0, shadow=10px, cor sombra=*/
+    cursor: pointer;
 }
