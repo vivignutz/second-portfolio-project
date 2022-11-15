@@ -19,3 +19,23 @@ body {
     border-radius: 10px;
     background-color: #89730e;
 }
+
+.card {
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    /* important for JS */
+    border-radius: 10px;
+}
+
+/* confirguration to all cards front and back */
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.back {
+    background: url("../images/back.png");
+}
