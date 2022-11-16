@@ -1,4 +1,4 @@
-//** Array image wchich are listed in html */
+//** oldArray image wchich are listed in html */
 let images = [];
 
 for (let i = 1; i < 12; i++) {
@@ -9,27 +9,31 @@ for (let i = 1; i < 12; i++) {
     images.push(img);
 }
 
+//** here starts the game */
+window.onload = startGame()
+
 function startGame() {
-    flippedCards = [];
+    flippedCards = []; //deixar assim para que flipe
     images = randomSort(images);
 
     let frontFaces = document.getElementsByClassName("front");
 
-    for (let i = 1; i < 12; i++) { //* while i < 12, the i will be increased 1 by 1 
-        let card = document.getElementById("card" + i); //*or  let card = document.querySelector("#card" + i);
+    for (let i = 1; i < 12; i++) {
+        let card = document.getElementById("card" + i);
 
-        card.addEventListener("click", flipCard); //** event click to flip theds funcao disparada: flipcard, false (to be sure that it wont happen by mistake) */
+        card.addEventListener("click", flipCard);
 
         frontFaces[i].style.background = "url('" + images[i - 1].src + "')";
         frontFaces[i].setAttribute("id", images[i - 1].id);
     }
 
-    //** creating alleatory numbers for card distribution */
+    //** creating alleatory numbers for cards distribution */
     function randomSort(oldArray) {
 
-        let newArray = []; //* new empty array 
+        //** newArray after creating new card sistribution */
+        let newArray = [];
 
-        while (newArray.length !== oldArray.length) { //*while newarray doesnt has same element numbers of the old one, new numbers are being created
+        while (newArray.length !== oldArray.length) {
             let i = Math.floor(Math.random() * oldArray.length); //* alleatory value which gets a random value X elemtn numbers of oldArray
 
             if (newArray.indexOf(oldArray[i]) < 1) {
@@ -40,7 +44,7 @@ function startGame() {
         return newArray;
     }
 
-    //** function to flip the cards */    
+    //** To flip up the cards */    
     function flipCard() {
         if (flippedCards.length < 2) {
             let faces = this.getElementsByClassName("face"); //* the clicked card
@@ -64,6 +68,3 @@ function startGame() {
         }
     }
 }
-
-//** here starts the game */
-window.onload = startGame()
