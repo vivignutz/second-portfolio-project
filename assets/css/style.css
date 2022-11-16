@@ -55,10 +55,6 @@ body {
     transform: rotateY(-180deg);
 }
 
-.front.flipped {
-    transform: rotateY(0deg);
-}
-
 .card:hover {
     box-shadow: 0 0 15px #282816;
     /* dist.x = 0, dist y=0, shadow=10px, cor sombra=*/
