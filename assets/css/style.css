@@ -9,10 +9,10 @@ body {
 }
 
 #container {
-    width: 1552px;
-    /* 160 px cada + 5 entre cards x 10 cards = 1645 */
-    height: 495px;
-    /* 240 px cada + 5 entre cards x 2 fileiras = 495 */
+    width: 1485px;
+    /* 160px each card + 5px between them X 9 cards = 1485 */
+    height: 500px;
+    /* 240px each card + 5px between cards X 2 rows = 495 */
     border: 1px solid #4c4c4c;
     position: relative;
     margin: 10px auto;
@@ -25,7 +25,7 @@ body {
 .card {
     width: 160px;
     height: 240px;
-    position: relative;
+    position: absolute;
     margin: 2px auto;
     flex-shrink: 0;
     /* pra nao encolher */
@@ -33,7 +33,7 @@ body {
     perspective: 600px;
 }
 
-/* confirguration to all cards front and back */
+/* confirguration of cards front and back */
 .face {
     width: 100%;
     height: 100%;
@@ -55,8 +55,12 @@ body {
     transform: rotateY(-180deg);
 }
 
+.front.flipped {
+    transform: rotateY(0deg);
+}
+
 .card:hover {
-    box-shadow: 0 0 15px #56562e;
+    box-shadow: 0 0 15px #282816;
     /* dist.x = 0, dist y=0, shadow=10px, cor sombra=*/
     cursor: pointer;
 }
