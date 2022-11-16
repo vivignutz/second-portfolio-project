@@ -9,28 +9,26 @@ body {
 }
 
 #container {
-    width: 1485px;
-    /* 160px each card + 5px between them X 9 cards = 1485 */
+    width: 1200px;
     height: 500px;
-    /* 240px each card + 5px between cards X 2 rows = 495 */
     border: 1px solid #4c4c4c;
-    position: relative;
     margin: 10px auto;
     border-radius: 10px;
     background-color: #89730e;
     flex-wrap: wrap;
+    flex-direction: row;
     display: flex;
 }
 
 .card {
     width: 160px;
     height: 240px;
-    position: absolute;
     margin: 2px auto;
     flex-shrink: 0;
-    /* pra nao encolher */
     border-radius: 10px;
     perspective: 600px;
+    top: 5px;
+    left: 5px;
 }
 
 /* confirguration of cards front and back */

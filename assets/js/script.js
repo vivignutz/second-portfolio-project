@@ -1,8 +1,4 @@
-//** anonymous function for an immediately start */
-(function () {
     let images = []; //** array for all images and respective texts. Or use >> images = []; 
-
-
 
     for (let i = 1; i < 18; i++) {
         let img = {
@@ -73,4 +69,3 @@
             }
         }
     }
-}());
