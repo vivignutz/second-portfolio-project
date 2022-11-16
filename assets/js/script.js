@@ -8,9 +8,6 @@
         images.push(img);
     }
 
-    //** here starts the game */
-    startGame();
-
     function startGame() {
         flippedCards = [];
         images = randomSort(images);
@@ -19,9 +16,6 @@
 
         for (let i = 1; i < 18; i++) { //* while i < 18, the i will be increased 1 by 1 
             let card = document.getElementById("card" + i); //*or  let card = document.querySelector("#card" + i);
-
-            card.style.left = (i === 1 || i === 10) ? 5 + "px" : i % 10 * 165 + 5 + "px";
-            card.style.top = i < 9 ? 5 + "px" : 250 + "px"; //* the symbol : means "else"
 
             card.addEventListener("click", flipCard); //** event click to flip theds funcao disparada: flipcard, false (to be sure that it wont happen by mistake) */
 
@@ -69,3 +63,6 @@
             }
         }
     }
+
+    //** here starts the game */
+    window.onload = startGame()
