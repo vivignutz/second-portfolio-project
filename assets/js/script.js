@@ -30,7 +30,7 @@ function startGame() {
     //** cards div w/classes front */
     let frontFaces = document.getElementsByClassName("front");
 
-    for (let i = 1; i < 13; i++) {
+    for (let i = 1; i < 12; i++) {
         let card = document.querySelector("#card" + i);
 
         card.addEventListener("click", flipCard, false);
@@ -92,5 +92,5 @@ function flipCard() {
 //** to bring the modal to the front */
 function gameOver() {
     modalGameOver.style.zIndex = 10;
-    modalGameOver.addEventListener("click, startGame, false")
+    modalGameOver.addEventListener("click", startGame, false)
 }

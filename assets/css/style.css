@@ -47,10 +47,12 @@ body {
 
 .back.flipped {
     transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
 
 .front {
     transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
 
 .front.flipped {
