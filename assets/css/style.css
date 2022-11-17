@@ -45,7 +45,7 @@ body {
     background: url("../images/back.png");
 }
 
-.back.flipped {
+.back.flippedCards {
     transform: rotateY(180deg);
 }
 
