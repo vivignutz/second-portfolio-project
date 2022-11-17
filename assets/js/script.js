@@ -5,9 +5,9 @@ let images = [];
 let flippedCards = [];
 
 //** assigning the images to the cards  */
-for (let i = 0; i < 12; i++) {
+for (let i = 1; i < 12; i++) {
     let img = {
-        src: "images/" + i + ".png",
+        src: "../assets/images" + i + ".png",
         id: i % 6
     };
 
@@ -28,16 +28,16 @@ function startGame() {
     //** cards div w/classes front */
     let frontFaces = document.getElementsByClassName("front");
 
-    for (let i = 0; i < 12; i++) {
+    for (let i = 1; i < 12; i++) {
         let card = document.querySelector("#card" + i);
-        //card.style.left = i % 6 === 0 ? 5 + "px" : i % 6 * 165 + 5 + "px";
+        //card.style.left = i % 6 === 1 ? 5 + "px" : i % 6 * 165 + 5 + "px";
         //card.style.top = i < 6 ? 5 + "px" : 250 + "px";
 
         card.addEventListener("click", flipCard, false);
 
         //** aditioning images ids to the cards */
-        frontFaces[i].style.background = "url('" + images[i].src + "')";
-        frontFaces[i].setAttribute("id", images[i].id);
+        frontFaces[i].style.background = "url('" + images[i - 1].src + "')";
+        frontFaces[i].setAttribute("id", images[i - 1].id);
     }
 }
 
@@ -49,7 +49,7 @@ function randomSort(oldArray) {
     while (newArray.length !== oldArray.length) {
         //** creates a variable i which gets a alleatory number */
         let i = Math.floor(Math.random() * oldArray.length); //* alleatory value which gets a random value X elemtn numbers of oldArray
-        if (newArray.indexOf(oldArray[i]) < 0) {
+        if (newArray.indexOf(oldArray[i]) < 1) {
             newArray.push(oldArray[i]);
         }
     }
