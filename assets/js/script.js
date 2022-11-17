@@ -22,6 +22,8 @@ function startGame() {
     //** reseting the card */
     flippedCards = [];
 
+    let modalGameOver = document.querySelector("#modalGameOver");
+
     //** sorting cards */
     images = randomSort(images);
 
@@ -82,4 +84,8 @@ function flipCard() {
 
         flippedCards = [];
     }
+}
+
+function gameOver() {
+    modalGameOver.style.zIndex = 10;
 }
