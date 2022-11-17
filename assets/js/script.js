@@ -5,9 +5,9 @@ let images = [];
 let flippedCards = [];
 
 //** assigning the images to the cards  */
-for (let i = 1; i < 12; i++) {
+for (let i = 1; i < 13; i++) {
     let img = {
-        src: "/images" + i + ".png",
+        src: "images/" + i + ".png",
         id: i % 6
     };
 
@@ -16,7 +16,7 @@ for (let i = 1; i < 12; i++) {
 }
 
 //** here starts the game */
-startGame()
+window.onload = startGame()
 
 function startGame() {
     //** reseting the card */
@@ -30,21 +30,20 @@ function startGame() {
     //** cards div w/classes front */
     let frontFaces = document.getElementsByClassName("front");
 
-    for (let i = 1; i < 12; i++) {
+    for (let i = 1; i < 13; i++) {
         let card = document.querySelector("#card" + i);
-        //card.style.left = i % 6 === 1 ? 5 + "px" : i % 6 * 165 + 5 + "px";
-        //card.style.top = i < 6 ? 5 + "px" : 250 + "px";
 
         card.addEventListener("click", flipCard, false);
 
         //** aditioning images ids to the cards */
         frontFaces[i].style.background = "url('" + images[i - 1].src + "')";
         frontFaces[i].setAttribute("id", images[i - 1].id);
+        console.log(images[i - 1].src);
     }
 
     //** to remove the modal from the front */
     modalGameOver.style.zIndex = -2;
-    modalGameOver.removeEventListener("click, startGame, false")
+    //modalGameOver.removeEventListener("click, startGame, false")
 }
 
 //** creating alleatory numbers for cards distribution */
