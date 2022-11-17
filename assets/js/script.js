@@ -7,7 +7,7 @@ let flippedCards = [];
 //** assigning the images to the cards  */
 for (let i = 1; i < 13; i++) {
     let img = {
-        src: "images/" + i + ".png",
+        src: "assets/images/" + i + ".png",
         id: i % 6
     };
 
