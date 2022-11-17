@@ -6,6 +6,7 @@
 
 body {
     background-color: #949494;
+    text-align: center;
 }
 
 #container {
@@ -38,19 +39,23 @@ body {
     position: absolute;
     border-radius: 10px;
     transition: all 1s;
-    backface-visibility: hidden;
+    /*backface-visibility: hidden;*/
 }
 
 .back {
     background: url("../images/back.png");
 }
 
-.back.flippedCards {
+.back.flipped {
     transform: rotateY(180deg);
 }
 
 .front {
     transform: rotateY(-180deg);
+}
+
+.front.flipped {
+    transform: rotateY(0deg);
 }
 
 .card:hover {
