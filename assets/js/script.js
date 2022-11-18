@@ -54,7 +54,7 @@ function startGame() {
         frontFaces[i].classList.remove("flipped", "match");
         backFaces[i].classList.remove("flipped", "match");
 
-        let card = document.querySelector("#card" + i);
+        let card = document.querySelector("#card" + (i + 1));
 
         card.addEventListener("click", flipCard, false);
 
