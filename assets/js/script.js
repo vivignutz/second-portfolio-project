@@ -19,9 +19,10 @@ let imgMatchSign = document.querySelector("#imgMatchSign");
 let matches = 0;
 
 //** assigning the images to the cards  */
+
 for (let i = 1; i < 13; i++) {
     let img = {
-        src: "assets/images/" + i + ".png",
+        src: `assets/images/${i}.png`,
         id: i % 6
     };
 
@@ -41,6 +42,7 @@ function startGame() {
 
     //** sorting cards */
     images = randomSort(images);
+    console.log(images);
 
     //** cards with class front and back */
     let frontFaces = document.getElementsByClassName("front");
@@ -88,7 +90,7 @@ function randomSort(oldArray) {
 function flipCard() {
     if (flippedCards.length < 2) {
         let faces = this.getElementsByClassName("face");
-
+        console.log(faces)
         //** to avoid to take card with same number */
         if (faces[0].classList.length > 2) {
             return;
@@ -140,7 +142,7 @@ function matchCardSign() {
     //** to set the old configuration when match img is gone */
     setTimeout(function () {
         imgMatchSign.style.zIndex = -1;
-        imgMatchSign.style.top = 250 + "px";
+        imgMatchSign.style.top = 150 + "px";
         imgMatchSign.style.opacity = 1;
 
     }, 1500);

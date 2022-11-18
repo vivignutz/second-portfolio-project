@@ -1,21 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
 /* general style */
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background-color: #949494;
     text-align: center;
     width: 680px;
+    height: fit-content;
 }
 
-.instruction .p {
+.instruction .instruct .p {
     width: 100%;
-    height: 200px;
+    height: 50px;
     margin: 10px auto;
-    position: absolute;
+    font-size: 30rem;
+    font-family: 'Lato', sans-serif;
+    position: relative;
     text-align: center;
     background-color: #89730e;
 }
@@ -92,9 +96,9 @@ body {
     margin-top: 100px;
 }
 
-#imgMatchSign {
-    position: relative;
-    top: 250px;
+#imgMatchSign>.container {
+    /*position: relative;*/
+    top: 150px;
     transition-property: top, opacity;
     transition-duration: 1.5s;
     opacity: 1;
