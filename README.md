@@ -1,108 +1,79 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## README IN CONSTRUCTION
+# Memory Card Game: Tidbits about Brazil
 
-Welcome vivignutz,
+The live link can be found [here](https://vivignutz.github.io/second-portfolio-project/).
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+    
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Introduction
 
-`python3 -m http.server`
+This project was thought as part of the Full Stack Software Development course offered by Code Institute Ireland.
 
-A blue button should appear to click: _Make Public_,
+The goal of this memory card game is to offer to users who have some interest in Brazilian culture and like ‘memes’ (or other funny contents) a little bit of the humor in the form of very fast memory card game, which users can find in any online journal or magazine.
 
-Another blue button should appear to click: _Open Browser_.
+The users can play this memory card while they are going or coming back to and from work, or during small pauses during the day or while relaxing at home. 
+Hopefully, this game can spark some interest from online media companies and offer to users the chance to take a fun pause.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+----------
 
-A blue button should appear to click: _Make Public_,
+## UX
 
-Another blue button should appear to click: _Open Browser_.
+### Overview
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The game was developed so that it can be inserted in some online media communication media (e-journal, e-magazines) or even become an application, to entertain the user in a moment of pause.
 
-To log into the Heroku toolbelt CLI:
+### Why a Memory Card Game?
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The idea behind the Memory Card Game project came from the need for people to have a small moment of distraction without the need to be connected all the time on social networks. 
+As an Internet user, I have always been very connected to social networks, which have become big "department stores" that bombard us all the time with products and services. 
+In the case of this memory game, the user can interact with his gadget, have some fun, without having to scroll the screen to avoid advertisements. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+### Key Project Goals
 
-## Release History
+I would like to provide the users with an entertaining moment, of quick interaction, so that they have a good experience on the weblog and also to avoid a possible fast bounce rate, since the blog is monetized.
+So, by using the jog, the user would stay longer inside my site.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+----------
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Design
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Design Process
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+1.  Strategy Plane  
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  User Stories 
+This site is created with the following user expectations in mind:
+    
+- As a first time user I would like to:
+    
+- Have a distraction other than social media, at the time I am in the waiting room of the doctor's office
+    
+- The interaction should be easy to navigate and without having to think to solve a problem
+    
+- The layout should not contain confusing elements and should be direct, simple and clear
+    
+- I can access it from all my electronic devices, be it a tablet, mobile phone or laptop
+    
+- Get an immediate result from my interaction, after all, is what is constantly sought after accessing social networks
+    
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- As the creator of the site, we would like to :
+    
+- Offer a secure, easy to use site that any adult person can access and immediately be interacting with the game, having fun with each correct move, no matter where he is
+    
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+3.  Scope Plane  
+    Features
+    
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+-   The site should be responsive and user-friendly on all browsers and devices.
+    
+-   Intuitive and user-friendly site that any people can gain and share experiences.
+    
+-   intuitive and user-friendly layout.
+    
+-   The purpose of the site should be clear immediately.
