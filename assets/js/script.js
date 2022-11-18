@@ -20,7 +20,7 @@ let matches = 0;
 
 //** assigning the images to the cards  */
 
-for (let i = 1; i < 13; i++) {
+for (let i = 1; i < 12; i++) {
     let img = {
         src: `assets/images/${i}.png`,
         id: i % 6
@@ -48,7 +48,7 @@ function startGame() {
     let frontFaces = document.getElementsByClassName("front");
     let backFaces = document.getElementsByClassName("back");
 
-    for (let i = 1; i < 13; i++) {
+    for (let i = 0; i < 12; i++) {
         //** accessing cards with class front */
         //** and removing the ones with classes flipped and match */
         frontFaces[i].classList.remove("flipped", "match");
@@ -59,9 +59,9 @@ function startGame() {
         card.addEventListener("click", flipCard, false);
 
         //** aditioning images ids to the cards */
-        frontFaces[i].style.background = "url('" + images[i - 1].src + "')";
-        frontFaces[i].setAttribute("id", images[i - 1].id);
-        console.log(images[i - 1].id);
+        frontFaces[i].style.background = "url('" + images[i].src + "')";
+        frontFaces[i].setAttribute("id", images[i].id);
+        console.log(images[i].id);
     }
 
     //** to remove the modal from the front */
