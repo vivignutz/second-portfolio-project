@@ -79,7 +79,7 @@ body {
     box-shadow: 0 0 15px #0f0;
 }
 
-#modalGameOver {
+#modalGameOver>.container {
     position: absolute;
     top: 0;
     width: 100%;
