@@ -10,19 +10,23 @@ body {
     background-color: #949494;
     justify-content: center;
     text-align: center;
-    width: 680px;
+    width: 1250px;
     height: fit-content;
 }
 
 .instruction .instruct .p {
-    width: 100%;
+    width: 680px;
     height: 50px;
     margin: 10px auto;
     font-size: 30rem;
     font-family: 'Lato', sans-serif;
     position: relative;
     text-align: center;
-    background-color: #89730e;
+}
+
+#main {
+    width: 680px;
+    height: 815px;
 }
 
 #container {
@@ -35,6 +39,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
+    position: relative;
 }
 
 .card {
@@ -84,22 +89,24 @@ body {
     box-shadow: 0 0 15px #0f0;
 }
 
-#modalGameOver>.container {
+#modalGameOver {
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 681px;
+    height: 813px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.687);
     z-index: -2;
 }
 
 #imgGameOver {
-    margin-top: 100px;
+    margin-top: 330px;
 }
 
-#imgMatchSign>.container {
-    /*position: relative;*/
-    top: 150px;
+#imgMatchSign {
+    position: relative;
+    top: 250px;
     transition-property: top, opacity;
     transition-duration: 1.5s;
     opacity: 1;

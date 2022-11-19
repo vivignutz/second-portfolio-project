@@ -15,12 +15,12 @@ let modalGameOver = document.querySelector("#modalGameOver");
 
 let imgMatchSign = document.querySelector("#imgMatchSign");
 
-//** variabel to count cards untill 6 */
+//** variabel to count the matches */
 let matches = 0;
 
 //** assigning the images to the cards  */
 
-for (let i = 1; i < 12; i++) {
+for (let i = 1; i < 13; i++) {
     let img = {
         src: `assets/images/${i}.png`,
         id: i % 6
@@ -31,18 +31,17 @@ for (let i = 1; i < 12; i++) {
 }
 
 //** here starts the game */
-window.onload = startGame()
+window.onload = startGame();
 
 function startGame() {
-    //** reseting the matches */
+    //** reseting matches */
     matches = 0;
 
-    //** reseting the flipped cards */
+    //** reseting flipped cards */
     flippedCards = [];
 
-    //** sorting cards */
+    //** shuffle cards */
     images = randomSort(images);
-    console.log(images);
 
     //** cards with class front and back */
     let frontFaces = document.getElementsByClassName("front");
@@ -61,12 +60,12 @@ function startGame() {
         //** aditioning images ids to the cards */
         frontFaces[i].style.background = "url('" + images[i].src + "')";
         frontFaces[i].setAttribute("id", images[i].id);
-        console.log(images[i].id);
     }
 
-    //** to remove the modal from the front */
+    //** after reorganizing the game to play again,  */
+    //** inserted value zIndex -2 to come to back of page again */
     modalGameOver.style.zIndex = -2;
-    //modalGameOver.removeEventListener("click, startGame, false")
+    modalGameOver.removeEventListener("click", startGame, false);
 }
 
 //** creating alleatory numbers for cards distribution */
@@ -103,7 +102,9 @@ function flipCard() {
         //** in case of no match */
         flippedCards.push(this);
 
-        //** to check if ther are 2 flipped cards and if they match */
+        // if array flippedcatds.lenght has achieve 2 elements. 
+        // If yes, it compares these 2 cards. Fot that I used the childNodes. 
+        // If the fliped card matches with the second one, the alert comes.
         if (flippedCards.length === 2) {
             if (flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id) {
                 flippedCards[0].childNodes[1].classList.toggle("match");
@@ -111,20 +112,21 @@ function flipCard() {
                 flippedCards[1].childNodes[1].classList.toggle("match");
                 flippedCards[1].childNodes[3].classList.toggle("match");
 
-                //** inserting the match img when cards match */
+                //** inserting the match img to shows when cards match */
                 matchCardSign();
 
                 matches++;
 
                 flippedCards = [];
 
+                //if matches is equal 6, the modal is generated and the game restarts
                 if (matches === 6) {
                     gameOver();
                 }
             }
         }
     } else {
-        flippedCards[0].childNodes[1].classList.toggle("flipped"); // childNodes to return newArray
+        flippedCards[0].childNodes[1].classList.toggle("flipped");
         flippedCards[0].childNodes[3].classList.toggle("flipped");
         flippedCards[1].childNodes[1].classList.toggle("flipped");
         flippedCards[1].childNodes[3].classList.toggle("flipped");
@@ -133,23 +135,23 @@ function flipCard() {
     }
 }
 
-//** to generate match img */
+//** to bring th match img to the front when cards matches */
 function matchCardSign() {
     imgMatchSign.style.zIndex = 1;
     imgMatchSign.style.top = 150 + "px";
     imgMatchSign.style.opacity = 0;
 
-    //** to set the old configuration when match img is gone */
+    //** to reset the configuration when match img does not show */
     setTimeout(function () {
         imgMatchSign.style.zIndex = -1;
-        imgMatchSign.style.top = 150 + "px";
+        imgMatchSign.style.top = 250 + "px";
         imgMatchSign.style.opacity = 1;
-
     }, 1500);
 }
 
+//window.setTimeout(function () { gameOver(); }, 2000)
 //** to bring the modal to the front */
 function gameOver() {
     modalGameOver.style.zIndex = 10;
-    modalGameOver.addEventListener("click", startGame, false)
+    modalGameOver.addEventListener("click", startGame, false);
 }
