@@ -1,54 +1,60 @@
-//** array to storage objects with src and id 1 to 6 */
+//** The game shoud start with a simple click on a choosen card */
+//* The cards has to flips and match with the corresponding text one */
+//* When 2 cards match the matched cards becomes a green border and a 
+// "match" sign should appears, going from down to top */
+//* when all cards are matched, the modal container should appear
+// and the "game over" img appears to the player, reseting the game *//
+
+//** array to storage objects with src */
 let images = [];
-
-//** img when cards match */
-var matchSign = document.querySelector("#match");
-
-//** img when the game is over */
-let modal = document.querySelector("#gameOver");
 
 //** array to storage clicked cards +/
 let flippedCards = [];
+
+//** img that shows when cards match */
+var matchSign = document.querySelector("#match");
+
+//** variabel to count the matches */
+let matches = 0;
+
+//** img that shows when the game is over */
+let modal = document.querySelector("#gameOver");
 
 //** game over */
 let modalGameOver = document.querySelector("#modalGameOver");
 
 let imgMatchSign = document.querySelector("#imgMatchSign");
 
-//** variabel to count the matches */
-let matches = 0;
 
-//** assigning the images to the cards  */
-
+//** assigning the images (12) to the cards  */
 for (let i = 1; i < 13; i++) {
     let img = {
         src: `assets/images/${i}.png`,
         id: i % 6
     };
 
-    //** push the images to array */
+    //** pushing the images to array */
     images.push(img);
 }
 
 //** here starts the game */
 window.onload = startGame();
 
+//* function startGame is called */
 function startGame() {
-    //** reseting matches */
     matches = 0;
-
-    //** reseting flipped cards */
     flippedCards = [];
 
-    //** shuffle cards */
+    //** shuffle the cards */
     images = randomSort(images);
 
-    //** cards with class front and back */
+    //** cards with class front and back are called */
     let frontFaces = document.getElementsByClassName("front");
     let backFaces = document.getElementsByClassName("back");
 
+    //* if the variable i = 0, so i is minor of 12 (cards), than i becomes a face front card */
     for (let i = 0; i < 12; i++) {
-        //** accessing cards with class front */
+
         //** and removing the ones with classes flipped and match */
         frontFaces[i].classList.remove("flipped", "match");
         backFaces[i].classList.remove("flipped", "match");
@@ -62,48 +68,52 @@ function startGame() {
         frontFaces[i].setAttribute("id", images[i].id);
     }
 
-    //** after reorganizing the game to play again,  */
-    //** inserted value zIndex -2 to come to back of page again */
+    //** after reorganizing the game to play again,
+    // inserted value zIndex -2 to come to back of page again */
     modalGameOver.style.zIndex = -2;
     modalGameOver.removeEventListener("click", startGame, false);
 }
 
-//** creating alleatory numbers for cards distribution */
+//** shiffling numbers for cards distribution again */
 function randomSort(oldArray) {
-    //** empty newArray is created */
+
+    //** an empty newArray is created */
     let newArray = [];
 
+    //** creates a variable i which gets a alleatory number */
     while (newArray.length !== oldArray.length) {
-        //** creates a variable i which gets a alleatory number */
-        let i = Math.floor(Math.random() * oldArray.length); //* alleatory value which gets a random value X elemtn numbers of oldArray
+
+        //* alleatory value which gets a random value X elemtn numbers of oldArray
+        let i = Math.floor(Math.random() * oldArray.length);
         if (newArray.indexOf(oldArray[i]) < 1) {
             newArray.push(oldArray[i]);
         }
     }
 
-    //** retorning to the nweArray */
+    //** returning to the nweArray */
     return newArray;
 }
 
-//** To flip up the cards */    
+//** this flips up up the cards */    
 function flipCard() {
     if (flippedCards.length < 2) {
         let faces = this.getElementsByClassName("face");
+
         //** to avoid to take card with same number */
-        if (faces[0].classList.length > 2) {
+        if (faces[1].classList.length > 2) {
             return;
         }
 
         faces[0].classList.toggle("flipped");
         faces[1].classList.toggle("flipped");
 
-        //** How to flip only 2 cards and unflip both in the 3rd click */
-        //** in case of no match */
+        //** How to flip only 2 cards and unflip both in the 3rd click
+        // in case of no match */
         flippedCards.push(this);
 
-        // if array flippedcatds.lenght has achieve 2 elements. 
-        // If yes, it compares these 2 cards. Fot that I used the childNodes. 
-        // If the fliped card matches with the second one, the alert comes.
+        //** if array flippedcatds.lenght has achieve 2 elements,
+        // it compares these 2 cards. Fot that I used the childNodes. 
+        // If the fliped card matches with the second one, the alert comes */
         if (flippedCards.length === 2) {
             if (flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id) {
                 flippedCards[0].childNodes[1].classList.toggle("match");
