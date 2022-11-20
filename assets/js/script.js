@@ -89,7 +89,6 @@ function randomSort(oldArray) {
 function flipCard() {
     if (flippedCards.length < 2) {
         let faces = this.getElementsByClassName("face");
-        console.log(faces)
         //** to avoid to take card with same number */
         if (faces[0].classList.length > 2) {
             return;

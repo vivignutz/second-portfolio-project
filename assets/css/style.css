@@ -21,6 +21,7 @@ body {
     position: relative;
 }
 
+/* style of the instruction heading */
 h1,
 p {
     font-family: 'Lato', sans-serif;
@@ -94,6 +95,7 @@ p {
     box-shadow: 0 0 15px #0f0;
 }
 
+/* cstyle of modal game over */
 #modalGameOver {
     position: absolute;
     top: 0;
@@ -109,6 +111,7 @@ p {
     margin-top: 330px;
 }
 
+/* style of match image */
 #imgMatchSign {
     position: relative;
     top: 250px;
