@@ -5,7 +5,7 @@ The live link can be found [here](https://vivignutz.github.io/second-portfolio-p
 
 ## Table of Contents
 
-
+>>>>> HERE COMES THE CONTENT
     
 
 ## Introduction
@@ -66,14 +66,23 @@ This site is created with the following user expectations in mind:
 - Offer a secure, easy to use site that any adult person can access and immediately be interacting with the game, having fun with each correct move, no matter where he is
     
 
-3.  Scope Plane  
+2.  Scope Plane  
     Features
     
 
--   The site should be responsive and user-friendly on all browsers and devices.
+-  The game was not designed for devices with screen sizes larger than 680 px because it is a game that can be implemented as a widget or a section within an online newspaper or magazine. 
+
+-  It should be responsive and user-friendly on all browsers and mobile devices. 
     
--   Intuitive and user-friendly site that any people can gain and share experiences.
+-  Intuitive and user-friendly game that any people can play and enjoy while on a train journey, after reading an article in a newspaper or having a pause of work.
     
--   intuitive and user-friendly layout.
+-  Intuitive and user-friendly layout.
     
--   The purpose of the site should be clear immediately.
+-  The purpose of the game should be clear immediately.
+
+
+ - The user can access the game as often as he wants, from any mobile device with internet. 
+- The user can easily click on any card in the game and it will automatically start. There is no start button to privde a faster and easier way to start the game. 
+        - The user can see an instruction header and the container with 12 cards, where he has to find the respective card, with the words referring to it. 
+
+
