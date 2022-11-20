@@ -48,7 +48,7 @@ So, by using the jog, the user would stay longer inside my site.
   User Stories 
 This site is created with the following user expectations in mind:
     
-- As a first time user I would like to:
+- [As a first time user I would like to:]
     
 - Have a distraction other than social media, at the time I am in the waiting room of the doctor's office
     
@@ -61,9 +61,9 @@ This site is created with the following user expectations in mind:
 - Get an immediate result from my interaction, after all, is what is constantly sought after accessing social networks
     
 
-- As the creator of the site, we would like to :
+- [As the creator of the site, we would like to:]
     
-- Offer a secure, easy to use site that any adult person can access and immediately be interacting with the game, having fun with each correct move, no matter where he is
+- Offer a secure, easy to use game that any adult person can access and immediately be interacting with the cards, having fun with each correct move, no matter where he is.
     
 
 2.  Scope Plane  
@@ -80,6 +80,14 @@ This site is created with the following user expectations in mind:
     
 -  The purpose of the game should be clear immediately.
 
+
+3.  Structure Plane
+    User Story:
+    
+    > - As a first time player I would like to immediately understand the rules bacause I have not much time.
+    
+
+    Acceptance Criteria:
 
  - The user can access the game as often as he wants, from any mobile device with internet. 
 - The user can easily click on any card in the game and it will automatically start. There is no start button to privde a faster and easier way to start the game. 
