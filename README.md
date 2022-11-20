@@ -43,54 +43,60 @@ So, by using the jog, the user would stay longer inside my site.
 
 ### Design Process
 
-1.  Strategy Plane  
+1. #### _Strategy Plane_
 
-  User Stories 
-This site is created with the following user expectations in mind:
+    **User Stories**
+    This site is created with the following user expectations in mind:
     
-- [As a first time user I would like to:]
+    > - As a first time user I would like to:
     
-- Have a distraction other than social media, at the time I am in the waiting room of the doctor's office
+    - Have a distraction other than social media, at the time I am in the waiting room of the doctor's office
     
-- The interaction should be easy to navigate and without having to think to solve a problem
+    - The interaction should be easy to navigate and without having to think to solve a problem
     
-- The layout should not contain confusing elements and should be direct, simple and clear
+    - The layout should not contain confusing elements and should be direct, simple and clear
     
-- I can access it from all my electronic devices, be it a tablet, mobile phone or laptop
+    - I can access it from all my electronic devices, be it a tablet, mobile phone or laptop
     
-- Get an immediate result from my interaction, after all, is what is constantly sought after accessing social networks
-    
-
-- [As the creator of the site, we would like to:]
-    
-- Offer a secure, easy to use game that any adult person can access and immediately be interacting with the cards, having fun with each correct move, no matter where he is.
+    - Get an immediate result from my interaction, after all, is what is constantly sought after accessing social networks
     
 
-2.  Scope Plane  
-    Features
+    > - As the creator of the site, we would like to:
+    
+    - Offer a secure, easy to use game that any adult person can access and immediately be interacting with the cards, having fun with each correct move, no matter     where he is.
     
 
--  The game was not designed for devices with screen sizes larger than 680 px because it is a game that can be implemented as a widget or a section within an online newspaper or magazine. 
+2. #### _Scope Plane_
 
--  It should be responsive and user-friendly on all browsers and mobile devices. 
+	**Features**    
+    * The game was not designed for devices with screen sizes larger than 680 px because it is a game that can be implemented as a widget or a section within an        online newspaper or magazine. 
+
+    * It should be responsive and user-friendly on all browsers and mobile devices. 
     
--  Intuitive and user-friendly game that any people can play and enjoy while on a train journey, after reading an article in a newspaper or having a pause of work.
+    * Intuitive and user-friendly game that any people can play and enjoy while on a train journey, after reading an article in a newspaper or having a pause of        work.
     
--  Intuitive and user-friendly layout.
+    * Intuitive and user-friendly layout.
     
--  The purpose of the game should be clear immediately.
+    * The purpose of the game should be clear immediately.
 
 
-3.  Structure Plane
-    User Story:
-    
+3. #### _Structure Plane_
+
+	**User Story:**    
     > - As a first time player I would like to immediately understand the rules bacause I have not much time.
-    
+    > I would like to have access to a quick game that could distract me for a minute. 
+    > After a minute or two of playing, I would like to see the result of my game as soon as possible.
+    > I would like the game to have easy rules. 
 
-    Acceptance Criteria:
 
- - The user can access the game as often as he wants, from any mobile device with internet. 
-- The user can easily click on any card in the game and it will automatically start. There is no start button to privde a faster and easier way to start the game. 
-        - The user can see an instruction header and the container with 12 cards, where he has to find the respective card, with the words referring to it. 
+    **Acceptance Criteria:**
+
+    > The user can access the game as many times as he wants, from any mobile device, as long as it has internet access. 
+    > The user can easily click on any card in the game and the game will start automatically. There is no start button in order to privde a faster and easier way      to start the game.
+    > The user can see an instruction headline and the container with 12 cards, where he should find the respective card, which the text referrs to it.
+
+
+    **Result:**  User Story accomplished.
+
 
 
