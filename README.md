@@ -198,19 +198,27 @@ So, by using the game, the user would stay longer inside of a website.
 
 For Markup Validator I have use the W3C Validator and for CSS, the W3C CSS Validator Services to validate all pages of the project to ensure there were no syntax errors in there.
 
--   W3C Markup Validator  
+-   **W3C Markup Validator** 
+ 
 [![HTML results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/w3validator.jpg)](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/w3validator.jpg)
     
--   W3C CSS Validator  
+    
+-   **W3C CSS Validator**  
+
 [![CSS results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/w3css.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/w3css.jpg)
 
 
 For JavaScript validator I have used Extends Class JS Validator.
 
--   Extends Class Validator
+-   **Extends Class Validator**
+
 [![JavaScript results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/w3css.jpg)
 
--   Lighthouse  [![Lighthouse](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/lighthousetest.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/lighthousetest.jpg)
+
+-   **Lighthouse**  
+
+[![Lighthouse](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/lighthousetest.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/lighthousetest.jpg)
+
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#further-testing)Further Testing
 
