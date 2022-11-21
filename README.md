@@ -246,7 +246,7 @@ For JavaScript validator I have used Extends Class JS Validator, which shows a w
 
 -   Several bugs were found regarding the fliping of the cards. This were solved with the right debugging with help of Chrome developer tools and the Slack students community of Code Institute.
 
--   Sorting of cards had also a bug, which was solved after running lots of tests with Chorme developer toolsand help or one tutor, the bug inside of an array (for sorting cards) was solved.
+-   Sorting of cards had also a bug, which was solved after running lots of tests with Chrome developer tools and help or one tutor, the bug inside of an array (for sorting cards) was solved.
     
 -   Bug with responsiveness that has to be solved.
         
@@ -272,6 +272,5 @@ For JavaScript validator I have used Extends Class JS Validator, which shows a w
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#acknowledgements)Acknowledgements
 
--   A huge thank to my mentor at Code Institute for helpful feedbacks and specially to the tutor "Ed", who teched me some logic to soarting the cards.
+-   A huge thank to my mentor at Code Institute for helpful feedbacks and specially to the tutor "Ed", who teached me some logic to soarting the cards.
     
-
