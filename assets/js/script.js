@@ -46,7 +46,8 @@ function startGame() {
     flippedCards = [];
 
     //** shuffle the cards */
-    images = randomSort(images);
+    // images = randomSort(images);
+    images = fyShuffle(images);
 
     //** cards with class front and back are called */
     let frontFaces = document.getElementsByClassName("front");
@@ -83,8 +84,9 @@ function randomSort(oldArray) {
     //** creates a variable i which gets a alleatory number */
     while (newArray.length !== oldArray.length) {
 
-        //* alleatory value which gets a random value X elemtn numbers of oldArray
+        //* alleatory value which gets a random value X element numbers of oldArray
         let i = Math.floor(Math.random() * oldArray.length);
+
         if (newArray.indexOf(oldArray[i]) < 1) {
             newArray.push(oldArray[i]);
         }
@@ -92,6 +94,16 @@ function randomSort(oldArray) {
 
     //** returning to the nweArray */
     return newArray;
+}
+
+// https://sebhastian.com/fisher-yates-shuffle-javascript/
+function fyShuffle(arr) {
+    let i = arr.length;
+    while (--i > 0) {
+        let randIndex = Math.floor(Math.random() * (i + 1));
+        [arr[randIndex], arr[i]] = [arr[i], arr[randIndex]];
+    }
+    return arr;
 }
 
 //** this flips up up the cards */    
