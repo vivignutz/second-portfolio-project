@@ -212,7 +212,10 @@ For JavaScript validator I have used Extends Class JS Validator, which shows a w
 
 -   **Extends Class Validator**
 
-[![JavaScript results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/w3css.jpg)
+[![JavaScript results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/jsvalidator.jpg)
+
+-   **JSHint**
+[![JavaScript results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jshint.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/jshint.jpg)
 
 
 -   **Lighthouse**  
