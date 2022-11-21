@@ -1,4 +1,3 @@
-## [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#readme-in-construction)README IN CONSTRUCTION
 
 # [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#memory-card-game-tidbits-about-brazil)Memory Card Game: Tidbits about Brazil
 
