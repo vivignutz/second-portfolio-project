@@ -1,4 +1,5 @@
 
+
 # [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#memory-card-game-tidbits-about-brazil)Memory Card Game: Tidbits about Brazil
 
 The live link can be found [here](https://vivignutz.github.io/second-portfolio-project/).
@@ -207,8 +208,7 @@ For Markup Validator I have use the W3C Validator and for CSS, the W3C CSS Valid
 For JavaScript validator I have used Extends Class JS Validator.
 
 -   Extends Class Validator
-[![JavaScript results]([(https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)
-
+[![JavaScript results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/jsvalidator.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/w3css.jpg)
 
 -   Lighthouse  [![Lighthouse](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/lighthousetest.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/lighthousetest.jpg)
 
@@ -262,3 +262,4 @@ For JavaScript validator I have used Extends Class JS Validator.
 
 -   A huge thank to my mentor at Code Institute for helpful feedbacks and to the tutors for helping me while the process.
     
+
