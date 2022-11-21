@@ -208,7 +208,7 @@ For Markup Validator I have use the W3C Validator and for CSS, the W3C CSS Valid
 [![CSS results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/w3css.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/w3css.jpg)
 
 
-For JavaScript validator I have used Extends Class JS Validator.
+For JavaScript validator I have used Extends Class JS Validator, which shows a warning about the Ecma Script.
 
 -   **Extends Class Validator**
 
