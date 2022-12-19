@@ -158,16 +158,12 @@ function flipCard() {
 
 //** to bring th match img to the front when cards matches */
 function matchCardSign() {
-    imgMatchSign.style.zIndex = 1;
-    imgMatchSign.style.top = 150 + "px";
-    imgMatchSign.style.opacity = 0;
+    imgMatchSign.classList.add("matched")
 
-    //** to reset the configuration when match img does not show */
+    /* to reset the configuration when match img does not show */
     setTimeout(function () {
-        imgMatchSign.style.zIndex = -1;
-        imgMatchSign.style.top = 250 + "px";
-        imgMatchSign.style.opacity = 1;
-    }, 1500);
+        imgMatchSign.classList.remove("matched")
+    }, 2500);
 }
 
 //window.setTimeout(function () { gameOver(); }, 2000)
@@ -176,3 +172,11 @@ function gameOver() {
     modalGameOver.style.zIndex = 10;
     modalGameOver.addEventListener("click", startGame, false);
 }
+
+//** Restart Game */
+
+const restartButton = document.getElementById("restart");
+// Add event listener to restart button
+restartButton.addEventListener("click", () => {
+
+});

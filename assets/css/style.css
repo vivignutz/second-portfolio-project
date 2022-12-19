@@ -12,6 +12,7 @@ body {
     text-align: center;
     width: 680px;
     height: fit-content;
+    margin: 0 auto;
 }
 
 .action {
@@ -59,6 +60,24 @@ p {
     margin-left: 5px;
 }
 
+/* Button Restart */
+button {
+    background-color: #89730e;
+    border: #282816;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    margin-top: 13px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #514304;
+    transition: 0.5s;
+}
+
 /* confirguration of cards front and back */
 .face {
     width: 100%;
@@ -100,7 +119,7 @@ p {
     position: absolute;
     top: 0;
     width: 681px;
-    height: 815px;
+    height: 835px;
     margin: 0 auto;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.687);
@@ -113,10 +132,23 @@ p {
 
 /* style of match image */
 #imgMatchSign {
-    position: relative;
-    top: 250px;
+    position: fixed;
+    /* so it's outside of the screen */
+    top: 110vh;
+    left: 50vw;
+
     transition-property: top, opacity;
     transition-duration: 1.5s;
-    opacity: 1;
+    opacity: 0;
     z-index: -1;
 }
+
+#imgMatchSign.matched {
+    top: 50vh;
+    /* So its top and left are exactly in the middle of the screen */
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Media queries */
