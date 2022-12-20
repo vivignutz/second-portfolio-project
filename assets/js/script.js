@@ -156,6 +156,11 @@ function flipCard() {
     }
 }
 
+function gameRestart() {
+    startGame();
+    flipCard();
+}
+
 //** to bring th match img to the front when cards matches */
 function matchCardSign() {
     imgMatchSign.classList.add("matched")
@@ -175,8 +180,6 @@ function gameOver() {
 
 //** Restart Game */
 
-const restartButton = document.getElementById("restart");
+let restartButton = document.getElementById("restartButton");
 // Add event listener to restart button
-restartButton.addEventListener("click", () => {
-
-});
+restartButton.addEventListener("click", gameRestart);
