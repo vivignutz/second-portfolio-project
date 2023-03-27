@@ -106,7 +106,7 @@ function fyShuffle(arr) {
     return arr;
 }
 
-//** this flips up up the cards */    
+//** this flips up up the cards */
 function flipCard() {
     if (flippedCards.length < 2) {
         let faces = this.getElementsByClassName("face");
