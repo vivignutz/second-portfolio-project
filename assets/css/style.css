@@ -17,13 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* .action {
-    width: 680px;
-    height: 50px;
-    margin: 10px auto;
-    position: relative;
-} */
-
 /* style of the instruction heading */
 h1,
 p {
@@ -61,7 +54,6 @@ p {
 .card {
     margin: 10px;
     flex-grow: 1;
-    /* flex-basis: 30%; */
     aspect-ratio: 1;
     flex-shrink: 0;
     border-radius: 10px;
@@ -93,6 +85,7 @@ button:hover {
     position: absolute;
     border-radius: 10px;
     transition: all 1s;
+    background-size: cover;
 }
 
 .back {
@@ -149,7 +142,7 @@ button:hover {
     background-color: #332e2eb2;
     transition-property: top;
     opacity: 0.5;
-    transition-duration: 1.5s;
+    transition-duration: 1.2s;
     opacity: 0;
     z-index: -1;
 }
@@ -195,10 +188,10 @@ button:hover {
 
     h1,
     p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     button {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
