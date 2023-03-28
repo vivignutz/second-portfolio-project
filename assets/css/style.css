@@ -1,40 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 /* general style */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: #000
 }
 
 body {
-    background-color: #000;
-    justify-content: center;
     text-align: center;
     max-width: 100%;
     height: fit-content;
     margin: 0 auto;
+    background-color: #000;
 }
 
 /* style of the instruction heading */
 h1,
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: #fff;
     font-weight: bold;
     text-align: center;
 }
 
-/* #main {
-    width: 640px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
 
 #container {
     width: 640px;
@@ -135,6 +124,7 @@ button:hover {
 #imgGameOver {
     margin-top: 330px;
     max-width: 100%;
+    opacity: 1;
 }
 
 /* style of match image */
@@ -167,7 +157,7 @@ footer {
 }
 
 footer ul {
-    margin: 24px;
+    margin: 5px;
     display: inline-block;
     list-style-type: none;
     align-items: center;
