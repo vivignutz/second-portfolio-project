@@ -4,23 +4,25 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background: #000
 }
 
 body {
     background-color: #949494;
     justify-content: center;
     text-align: center;
-    width: 680px;
+    max-width: 100%;
     height: fit-content;
     margin: 0 auto;
 }
 
-.action {
+/* .action {
     width: 680px;
     height: 50px;
     margin: 10px auto;
     position: relative;
-}
+} */
 
 /* style of the instruction heading */
 h1,
@@ -31,9 +33,18 @@ p {
     text-align: center;
 }
 
+/* #main {
+    width: 640px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
 #container {
     width: 640px;
-    height: 660px;
     border: 1px solid #757272;
     margin: 20px auto;
     border-radius: 10px;
@@ -41,15 +52,17 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
+    /* gap: 1rem; */
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
     margin: 10px;
+    flex-grow: 1;
+    /* flex-basis: 30%; */
+    aspect-ratio: 1;
     flex-shrink: 0;
     border-radius: 10px;
     perspective: 600px;
@@ -84,6 +97,7 @@ button:hover {
 
 .back {
     background: url("../images/back_face.jpg");
+    background-size: cover;
 }
 
 .back.flipped {
@@ -113,8 +127,8 @@ button:hover {
 #modalGameOver {
     position: absolute;
     top: 0;
-    width: 681px;
-    height: 892px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.687);
@@ -123,6 +137,7 @@ button:hover {
 
 #imgGameOver {
     margin-top: 330px;
+    max-width: 100%;
 }
 
 /* style of match image */
@@ -132,7 +147,8 @@ button:hover {
     top: 110vh;
     left: 50vw;
     background-color: #332e2eb2;
-    transition-property: top, opacity;
+    transition-property: top;
+    opacity: 0.5;
     transition-duration: 1.5s;
     opacity: 0;
     z-index: -1;
@@ -147,6 +163,18 @@ button:hover {
 }
 
 /* Media queries */
+@media screen and (min-width: 1200px) {
+    .card {
+        flex-basis: calc(20% - 20px);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        flex-basis: calc(30% - 20px);
+    }
+}
+
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
@@ -160,9 +188,9 @@ button:hover {
     }
 
     .card {
-        width: 45%;
-        height: auto;
-        margin: 10px 2.5%;
+        width: calc(33.33% - 20px);
+        height: calc(33.33% - 20px);
+        margin: 10px;
     }
 
     h1,
