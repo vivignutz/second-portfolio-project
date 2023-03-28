@@ -1,6 +1,6 @@
 //** The game shoud start with a simple click on a choosen card */
 //* The cards has to flips and match with the corresponding text one */
-//* When 2 cards match the matched cards becomes a green border and a 
+//* When 2 cards match the matched cards becomes a green border and a
 // "match" sign should appears, going from down to top */
 //* when all cards are matched, the modal container should appear
 // and the "game over" img appears to the player, reseting the game *//
@@ -8,13 +8,13 @@
 //** array to storage objects with src */
 let images = [];
 
-//** array to storage clicked cards +/
+//** array to storage clicked cards */
 let flippedCards = [];
 
 //** img that shows when cards match */
-var matchSign = document.querySelector("#match");
+let matchSign = document.querySelector("#match");
 
-//** variabel to count the matches */
+//** variable to count the matches */
 let matches = 0;
 
 //** img that shows when the game is over */
@@ -23,13 +23,14 @@ let modal = document.querySelector("#gameOver");
 //** game over */
 let modalGameOver = document.querySelector("#modalGameOver");
 
+//** sign when match happens */
 let imgMatchSign = document.querySelector("#imgMatchSign");
 
 
 //** assigning the images (12) to the cards  */
 for (let i = 1; i < 13; i++) {
     let img = {
-        src: `assets/images/${i}.png`,
+        src: `assets/images/${i}.jpg`,
         id: i % 6
     };
 
@@ -46,7 +47,6 @@ function startGame() {
     flippedCards = [];
 
     //** shuffle the cards */
-    // images = randomSort(images);
     images = fyShuffle(images);
 
     //** cards with class front and back are called */

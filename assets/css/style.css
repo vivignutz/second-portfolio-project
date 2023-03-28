@@ -32,8 +32,8 @@ p {
 }
 
 #container {
-    width: 420px;
-    height: 420px;
+    width: 640px;
+    height: 660px;
     border: 1px solid #757272;
     margin: 20px auto;
     border-radius: 10px;
@@ -83,7 +83,7 @@ button:hover {
 }
 
 .back {
-    background: url("../images/back.png");
+    background: url("../images/back_face.jpg");
 }
 
 .back.flipped {
