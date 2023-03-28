@@ -124,7 +124,7 @@ function flipCard() {
         flippedCards.push(this);
 
         //** if array flippedcatds.lenght has achieve 2 elements,
-        // it compares these 2 cards. Fot that I used the childNodes. 
+        // it compares these 2 cards. Fot that I used the childNodes.
         // If the fliped card matches with the second one, the alert comes */
         if (flippedCards.length === 2) {
             if (flippedCards[0].childNodes[3].id === flippedCards[1].childNodes[3].id) {
