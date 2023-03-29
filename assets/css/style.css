@@ -140,8 +140,6 @@ button:hover {
     transition-duration: 1.2s;
     opacity: 0;
     z-index: -1;
-    background-image: url("../images/match.png");
-    background-size: contain;
 }
 
 #imgMatchSign.matched {
