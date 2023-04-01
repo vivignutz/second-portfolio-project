@@ -42,7 +42,7 @@ So, by using the game, the user would stay longer inside of a website.
     
  -   #### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#second-impressions-of-the-users)First impressions of the users
  
-		- This site is created with the following user expectations in mind: 
+	    - This site is created with the following user expectations in mind: 
 				 
 	    -   "As a first time user, I would like to:
     
@@ -57,7 +57,8 @@ So, by using the game, the user would stay longer inside of a website.
 	    -   As the creator of the site, we would like to:
     
 		    -   Offer a secure, easy to use game that any adult person can access and immediately be interacting with the cards, having fun with each correct move, no matter where he is.
-		    -   
+		    -   Try to monetyze in the future, selling the game for magazines or e-newspapaers.
+		     
 -  #### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#scope-plane)Scope Plane
     
     **Features**
@@ -78,7 +79,6 @@ So, by using the game, the user would stay longer inside of a website.
 
 	-   I have used colors that could be contrasted with the white used in all back faces of the cards. 
 
-	- #949494 Gray for the Head/Instructions
 	- #FFFFFF White for the back of the cards and text color
 	- #DEBA13 Gold Tips for the details of the back cards
 	- #757272 Smokey Gray to the modal content
@@ -108,12 +108,17 @@ So, by using the game, the user would stay longer inside of a website.
 
 -   **Simple head with instructions**
     
-    -   The game has no header and no footer. Instead, the **h1** was build inside of th main div and invites the user to start to play.
+    -   The game has no header header. Instead, the **h1** was build inside of th main div and invites the user to start to play.
     - 	Below the **h1** there is a **paragraph** with instructions to click in one card to start to play.
     - 	The goal to build a simple head is to let the user to focuse in the game and not in any other interactions.
+    - 	A very simple footer was build, which contains the name of the develper and its GitHub link + the GitHub icon. This feature doesn't appear when used at small screens, until the user scrolls the screen a little bit.
     
 
 [![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/head.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/head.jpg)
+
+
+[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/head_large.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/head_large.jpg)
+
 
 -  **Hoving effect at the back of the cards**
 
@@ -122,18 +127,21 @@ So, by using the game, the user would stay longer inside of a website.
 
 -   **The flipping Cards**
     
-    -   The game has 12 cards which 6 of them contain images and the ohter 6, contain text that correspond to the images. The user has to find the two cards that matches each other.
+    -   The game has 12 cards with 6 different images that shows a little bit about brazilian culture. The user has to find the two cards that matches each other. The cards are displayed in a table 3 x 4, which easily addapts to the small screens.
     
     - When clicked on one card, it flips in 180 degrees and while it is fliping, a 3D-effect appears. If the cards do not match, the third click should unflip both cards in -180 degrees, coming back to the started position. 
 
-[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/flipping_cards.gif)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/flipping_cards.gif)
+[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/flip.gif)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/flip.gif)
 
 
 -   **Matching two cards**
     
-    -   When two cards match, they stay fixed open, and both get a neon green border to show to the user that these cards are still used and match each other.
+    -   When two cards match, they stay opened fixed, and both get a neon green border to show to the user that these cards are still used and match each other. Moreover, a match modal sign appears telling "MATCH".
+  
 
 [![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/marked_border.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/marked_border.jpg)
+
+[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/matching_sign.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/matching_sign.jpg)
         
 
 -   **Winning the game**
@@ -152,13 +160,9 @@ So, by using the game, the user would stay longer inside of a website.
 
 -   **Features Left to Implement**
 
-	- A Fav icon. 
+	- A Favicon. 
 	
-	- Improve the responsiveness for all mobile devices.
-	
-	- Implement the **"Match image Sign"**, which is not appearing in the right moment one. I realized that while running th tests. 
-
-	- The sorting of the cards has to be improved, since some times the same card opens more than one time.
+	- Implementation of an error counter in which the user can try to improve its errors more and more according to its desire to keep playing.
 
 
 ## [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#technologies-used)Technologies Used
@@ -171,27 +175,30 @@ So, by using the game, the user would stay longer inside of a website.
 -   [Git](https://git-scm.com/)  Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 -   [Gif Cap:](https://gifcap.dev/)  To record my screen and transfor in a .gif format.
 -   [Google Images - Creative Commons:](https://images.google.com.br/)  Used Brazilian Google Image Creative common in order to get the images of Brazilian memes.
--   [Am I Responsive:](http://ami.responsivedesign.is/)  Checking the responsive.
+-   [Am I Responsive:](http://ui.dev/responsive) Checking the responsive.
 -   [Arty Click Colors:](https://colors.artyclick.com/color-name-finder/)  To discover the name of the colors.
 
 ## [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#tests)Tests
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#browser-testing)Browser testing
 
--   The game was though to run in mobile devices. I have used to test the browses Chrome and Safari (for iPhone).
+-   The game was though to run in mobile devices. I have used the browses Chrome, Brave and Safari to run tests.
     
 -   The tests with Chrome Developer Tools were done using Windows 11 Pro.
 
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#responsivness)Responsivness
 
--   I have tested that this game works on different screen sizes for mobile devices. The tests were ran for Samsung Galaxi S8+ (360px wide)  and also for iPad (800px wiede).
+-   I have tested that this game works on different screen sizes for mobile devices. The tests were ran for Samsung Galaxi S8+ and iPhone 8 Plus (360px wide), and also for iPad Air (800px wide).
 
--   The configuration **"4 x 3"** of the cards, brought the initial responsiveness to the game accordint to its card configuration.
+-   The configuration **"3 x 4"** of the cards, brought the initial responsiveness to the game accordint to its card configuration.
     
 -   The Chrome developer tool have been used to check the responsivness of the website.
 
-[![HTML results](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/gif_responsiveness.gif)](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/gif_responsiveness.gif)
+[![iPad view](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/ipad_mini.jpg)](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/ipad_mini.jpg)
+
+
+[![Mobile view](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/mobile.jpg)](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/mobile.jpg)
     
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#validator-testing)Validator Testing
@@ -266,11 +273,12 @@ For JavaScript validator I have used Extends Class JS Validator, which shows a w
 
 -   [Google Fonts:](https://fonts.google.com/)  Font family ’Lato’ used on all pages.
 -   [Font Awesome:](https://fontawesome.com/)  Oly used in fifth section to add icons at the style.
--   [Am I Responsive:](http://ami.responsivedesign.is/)  Checking the responsive.
+-   [Am I Responsive:](http://ui.dev/amiresponsive/)  Checking the responsive.
 -   [Gif Cap:](https://gifcap.dev/)  To record my screen in .gif format.
+-   [Pic Rezise](https://picresize.com/)  To rezise the pictures for README.
 -   [Self HTML-Wiki](https://wiki.selfhtml.org/wiki/JavaScript/Tutorials)  Tutorials JavaScript for beginners.
 
 ### [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#acknowledgements)Acknowledgements
 
--   A huge thank to my mentor at Code Institute for helpful feedbacks and specially to the tutor "Ed", who teached me some logic to soarting the cards.
+-   A huge thank to my new mentor at Code Institute for helpful feedbacks and specially to the CI tutors "Ed".
     
