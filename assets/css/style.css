@@ -1,30 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
 /* general style */
 * {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: #000
 }
 
 body {
+    background-color: #949494;
+    justify-content: center;
     text-align: center;
-    max-width: 100%;
     height: fit-content;
     margin: 0 auto;
-    background-color: #000;
+}
+
+.action {
+    width: 680px;
+    height: 50px;
+    margin: 10px auto;
+    position: relative;
 }
 
 /* style of the instruction heading */
 h1,
 p {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #fff;
     font-weight: bold;
     text-align: center;
 }
 
-<<<<<<< HEAD #main {
+#main {
     width: 683px;
     height: 895px;
 }
@@ -32,215 +38,125 @@ p {
 #container {
     width: 683px;
     height: 755px;
+    border: 1px solid #757272;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #89730e;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+}
 
-    =======#container {
-        width: 640px;
-        >>>>>>>3eac1f6aeb90c97d6ad7d89676860923d21f7c94 border: 1px solid #757272;
-        margin: 20px auto;
-        border-radius: 10px;
-        background-color: #89730e;
-        flex-wrap: wrap;
-        flex-direction: row;
-        display: flex;
-        /* gap: 1rem; */
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
+.card {
+    width: 160px;
+    height: 240px;
+    margin: 2px auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    perspective: 600px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
-    .card {
-        margin: 10px;
-        flex-grow: 1;
-        aspect-ratio: 1;
-        flex-shrink: 0;
-        border-radius: 10px;
-        perspective: 600px;
-    }
+/* Button Restart */
+button {
+    background-color: #89730e;
+    border: #282816;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    margin-top: 13px;
+}
 
-    /* Button Restart */
-    button {
-        background-color: #89730e;
-        border: #282816;
-        border-radius: 0.5rem;
-        font-family: inherit;
-        font-size: 1.3rem;
-        color: #fff;
-        padding: 0.7rem 1rem;
-        margin-top: 13px;
-    }
+button:hover {
+    cursor: pointer;
+    background-color: #514304;
+    transition: 0.5s;
+}
 
-    button:hover {
-        cursor: pointer;
-        background-color: #514304;
-        transition: 0.5s;
-    }
+/* confirguration of cards front and back */
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+}
 
-    /* confirguration of cards front and back */
-    .face {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border-radius: 10px;
-        transition: all 1s;
-    }
+.back {
+    background: url("../images/back.png");
+}
 
-    .back {
-        background: url("../images/back_face.jpg");
-        background-size: cover;
-    }
+.back.flipped {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
 
-    .back.flipped {
-        transform: rotateY(180deg);
-        backface-visibility: hidden;
-    }
+.front {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
 
-    .front {
-        transform: rotateY(-180deg);
-        backface-visibility: hidden;
-        background: contain;
-    }
+.front.flipped {
+    transform: rotateY(0deg);
+}
 
-    .front.flipped {
-        transform: rotateY(0deg);
-        background-size: cover;
-    }
+.card:hover {
+    box-shadow: 0 0 15px #282816;
+    cursor: pointer;
+}
 
-    .face.flipped {
-        background-size: cover;
-    }
+.face.flipped.match {
+    box-shadow: 0 0 15px #0f0;
+}
 
-    .card:hover {
-        box-shadow: 0 0 30px #282816;
-        cursor: pointer;
-    }
+/* cstyle of modal game over */
+#modalGameOver {
+    position: absolute;
+    top: 0;
+    width: 681px;
+    height: 892px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.687);
+    z-index: -2;
+}
 
-    .face.flipped.match {
-        box-shadow: 0 0 15px #0f0;
-    }
+#imgGameOver {
+    margin-top: 330px;
+}
 
-    /* cstyle of modal game over */
-    #modalGameOver {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        margin: 0 auto;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.687);
-        z-index: -2;
-    }
+/* style of match image */
+#imgMatchSign {
+    position: fixed;
+    /* so it's outside of the screen */
+    top: 110vh;
+    left: 50vw;
+    background-color: #332e2eb2;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 0;
+    z-index: -1;
+}
 
-    #imgGameOver {
-        margin-top: 330px;
-        max-width: 100%;
-        opacity: 1;
-    }
+#imgMatchSign.matched {
+    top: 50vh;
+    /* So its top and left are exactly in the middle of the screen */
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    z-index: 100;
+}
 
-    /* style of match image */
-    #imgMatchSign {
-        position: fixed;
-        /* so it's outside of the screen */
-        top: 110vh;
-        left: 50vw;
-        background-color: #332e2eb2;
-        transition-property: top;
-        opacity: 0.5;
-        transition-duration: 1.2s;
-        opacity: 0;
-        z-index: -1;
-    }
-
-    #imgMatchSign.matched {
-        top: 50vh;
-        /* So its top and left are exactly in the middle of the screen */
-        transform: translateX(-50%) translateY(-50%);
-        opacity: 1;
-        z-index: 100;
-    }
-
-    <<<<<<< HEAD
-    /* Media Queries */
-    /* Large Viewports */
+/* Media Queries */
+/* Large Viewports */
 
 
-    /* Viewports between 320px and 480px wide */
-    /*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/* Viewports between 320px and 480px wide */
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .card {
         background: #949494;
-=======
-footer {
-    background-color: black;
-    text-align: center;
-    color: #fff;
-    margin-bottom: auto;
-}
-
-footer ul {
-    margin: 5px;
-    display: inline-block;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-
-}
-
-footer ul h3 {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-}
-
-footer ul img {
-    margin: 5px;
-    margin-top: 10px;
-    padding: 5px;
-    border-radius: 8px;
-}
-
-footer ul a img:hover {
-    background-color: #514304;
-}
-
-/* Media queries */
-    @media screen and (min-width: 1200px) {
-        .card {
-            flex-basis: calc(20% - 20px);
-        }
     }
-
-    @media screen and (min-width: 769px) {
-        .card {
-            flex-basis: calc(30% - 20px);
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        body {
-            width: 100%;
-            height: 100%;
-        }
-
-        #container {
-            width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-
-        .card {
-            width: calc(33.33% - 20px);
-            height: calc(33.33% - 20px);
-            margin: 10px;
-        }
-
-        h1,
-        p {
-            font-size: 1rem;
-        }
-
-        button {
-            font-size: 1rem;
-            >>>>>>>3eac1f6aeb90c97d6ad7d89676860923d21f7c94
-        }
-    }
+}
