@@ -9,10 +9,7 @@
 
 body {
     text-align: center;
-<<<<<<< HEAD
-=======
     max-width: 100%;
->>>>>>> 3eac1f6aeb90c97d6ad7d89676860923d21f7c94
     height: fit-content;
     margin: 0 auto;
     background-color: #000;
@@ -27,8 +24,7 @@ p {
     text-align: center;
 }
 
-<<<<<<< HEAD
-#main {
+<<<<<<< HEAD #main {
     width: 683px;
     height: 895px;
 }
@@ -36,141 +32,139 @@ p {
 #container {
     width: 683px;
     height: 755px;
-=======
 
-#container {
-    width: 640px;
->>>>>>> 3eac1f6aeb90c97d6ad7d89676860923d21f7c94
-    border: 1px solid #757272;
-    margin: 20px auto;
-    border-radius: 10px;
-    background-color: #89730e;
-    flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    /* gap: 1rem; */
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    =======#container {
+        width: 640px;
+        >>>>>>>3eac1f6aeb90c97d6ad7d89676860923d21f7c94 border: 1px solid #757272;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: #89730e;
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-.card {
-    margin: 10px;
-    flex-grow: 1;
-    aspect-ratio: 1;
-    flex-shrink: 0;
-    border-radius: 10px;
-    perspective: 600px;
-}
+    .card {
+        margin: 10px;
+        flex-grow: 1;
+        aspect-ratio: 1;
+        flex-shrink: 0;
+        border-radius: 10px;
+        perspective: 600px;
+    }
 
-/* Button Restart */
-button {
-    background-color: #89730e;
-    border: #282816;
-    border-radius: 0.5rem;
-    font-family: inherit;
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 0.7rem 1rem;
-    margin-top: 13px;
-}
+    /* Button Restart */
+    button {
+        background-color: #89730e;
+        border: #282816;
+        border-radius: 0.5rem;
+        font-family: inherit;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 0.7rem 1rem;
+        margin-top: 13px;
+    }
 
-button:hover {
-    cursor: pointer;
-    background-color: #514304;
-    transition: 0.5s;
-}
+    button:hover {
+        cursor: pointer;
+        background-color: #514304;
+        transition: 0.5s;
+    }
 
-/* confirguration of cards front and back */
-.face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transition: all 1s;
-}
+    /* confirguration of cards front and back */
+    .face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        transition: all 1s;
+    }
 
-.back {
-    background: url("../images/back_face.jpg");
-    background-size: cover;
-}
+    .back {
+        background: url("../images/back_face.jpg");
+        background-size: cover;
+    }
 
-.back.flipped {
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
+    .back.flipped {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
 
-.front {
-    transform: rotateY(-180deg);
-    backface-visibility: hidden;
-    background: contain;
-}
+    .front {
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+        background: contain;
+    }
 
-.front.flipped {
-    transform: rotateY(0deg);
-    background-size: cover;
-}
+    .front.flipped {
+        transform: rotateY(0deg);
+        background-size: cover;
+    }
 
-.face.flipped {
-    background-size: cover;
-}
+    .face.flipped {
+        background-size: cover;
+    }
 
-.card:hover {
-    box-shadow: 0 0 30px #282816;
-    cursor: pointer;
-}
+    .card:hover {
+        box-shadow: 0 0 30px #282816;
+        cursor: pointer;
+    }
 
-.face.flipped.match {
-    box-shadow: 0 0 15px #0f0;
-}
+    .face.flipped.match {
+        box-shadow: 0 0 15px #0f0;
+    }
 
-/* cstyle of modal game over */
-#modalGameOver {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.687);
-    z-index: -2;
-}
+    /* cstyle of modal game over */
+    #modalGameOver {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.687);
+        z-index: -2;
+    }
 
-#imgGameOver {
-    margin-top: 330px;
-    max-width: 100%;
-    opacity: 1;
-}
+    #imgGameOver {
+        margin-top: 330px;
+        max-width: 100%;
+        opacity: 1;
+    }
 
-/* style of match image */
-#imgMatchSign {
-    position: fixed;
-    /* so it's outside of the screen */
-    top: 110vh;
-    left: 50vw;
-    background-color: #332e2eb2;
-    transition-property: top;
-    opacity: 0.5;
-    transition-duration: 1.2s;
-    opacity: 0;
-    z-index: -1;
-}
+    /* style of match image */
+    #imgMatchSign {
+        position: fixed;
+        /* so it's outside of the screen */
+        top: 110vh;
+        left: 50vw;
+        background-color: #332e2eb2;
+        transition-property: top;
+        opacity: 0.5;
+        transition-duration: 1.2s;
+        opacity: 0;
+        z-index: -1;
+    }
 
-#imgMatchSign.matched {
-    top: 50vh;
-    /* So its top and left are exactly in the middle of the screen */
-    transform: translateX(-50%) translateY(-50%);
-    opacity: 1;
-    z-index: 100;
-}
+    #imgMatchSign.matched {
+        top: 50vh;
+        /* So its top and left are exactly in the middle of the screen */
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+        z-index: 100;
+    }
 
-<<<<<<< HEAD
-/* Media Queries */
-/* Large Viewports */
+    <<<<<<< HEAD
+    /* Media Queries */
+    /* Large Viewports */
 
 
-/* Viewports between 320px and 480px wide */
-/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Viewports between 320px and 480px wide */
+    /*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .card {
         background: #949494;
 =======
@@ -210,43 +204,43 @@ footer ul a img:hover {
 }
 
 /* Media queries */
-@media screen and (min-width: 1200px) {
-    .card {
-        flex-basis: calc(20% - 20px);
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .card {
-        flex-basis: calc(30% - 20px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        height: 100%;
+    @media screen and (min-width: 1200px) {
+        .card {
+            flex-basis: calc(20% - 20px);
+        }
     }
 
-    #container {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
+    @media screen and (min-width: 769px) {
+        .card {
+            flex-basis: calc(30% - 20px);
+        }
     }
 
-    .card {
-        width: calc(33.33% - 20px);
-        height: calc(33.33% - 20px);
-        margin: 10px;
-    }
+    @media screen and (max-width: 768px) {
+        body {
+            width: 100%;
+            height: 100%;
+        }
 
-    h1,
-    p {
-        font-size: 1rem;
-    }
+        #container {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
 
-    button {
-        font-size: 1rem;
->>>>>>> 3eac1f6aeb90c97d6ad7d89676860923d21f7c94
+        .card {
+            width: calc(33.33% - 20px);
+            height: calc(33.33% - 20px);
+            margin: 10px;
+        }
+
+        h1,
+        p {
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1rem;
+            >>>>>>>3eac1f6aeb90c97d6ad7d89676860923d21f7c94
+        }
     }
-}
