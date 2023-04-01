@@ -21,7 +21,7 @@ let matches = 0;
 let modal = document.querySelector("#gameOver");
 
 //** game over */
-let modalGameOver = document.querySelector("#modalGameOver");
+let modalGameOver = document.querySelector("#imgGameOver");
 
 let imgMatchSign = document.querySelector("#imgMatchSign");
 

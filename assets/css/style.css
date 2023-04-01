@@ -10,7 +10,6 @@ body {
     background-color: #949494;
     justify-content: center;
     text-align: center;
-    width: 680px;
     height: fit-content;
     margin: 0 auto;
 }
@@ -32,12 +31,12 @@ p {
 }
 
 #main {
-    width: 680px;
-    height: 815px;
+    width: 683px;
+    height: 895px;
 }
 
 #container {
-    width: 680px;
+    width: 683px;
     height: 755px;
     border: 1px solid #757272;
     margin: 20px auto;
@@ -151,4 +150,13 @@ button:hover {
     z-index: 100;
 }
 
-/* Media queries */
+/* Media Queries */
+/* Large Viewports */
+
+
+/* Viewports between 320px and 480px wide */
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .card {
+        background: #949494;
+    }
+}
