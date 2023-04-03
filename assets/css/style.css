@@ -16,14 +16,6 @@ body {
     background-color: #000;
 }
 
-.action {
-    width: 100%;
-    max-width: 320px;
-    height: 50px;
-    margin: 10px auto;
-    position: relative;
-}
-
 /* style of the instruction heading */
 h1,
 p {
@@ -35,16 +27,18 @@ p {
 }
 
 /* #main {
-    width: 100%;
-    height: auto;
-    max-width: 683px;
-    margin: auto;
-    background-color: black;
-}
-*/
+    width: 640px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
 
 #container {
-    width: 500px;
+    width: 420px;
     border: 1px solid #757272;
     margin: 20px auto;
     border-radius: 10px;
@@ -52,19 +46,19 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
+    /* gap: 1rem; */
+    justify-content: center;
+    align-items: center;
     position: relative;
-    gap: 1rem;
 }
 
 .card {
+    margin: 7px;
     flex-grow: 1;
-    flex-basis: 30%;
     aspect-ratio: 1;
     flex-shrink: 0;
     border-radius: 10px;
     perspective: 600px;
-    margin-top: 5px;
-    margin-left: 5px;
     background-size: cover;
 }
 
@@ -93,6 +87,7 @@ button:hover {
     position: absolute;
     border-radius: 10px;
     transition: all 1s;
+    background-size: cover;
 }
 
 .back {
@@ -135,29 +130,35 @@ button:hover {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
-    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.687);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: -2;
 }
 
 #imgGameOver {
     margin-top: 330px;
-    opacity: 1;
-    width: 100vw;
+    opacity: 0.8;
+    width: 80%;
+    min-width: 300px;
+    padding: 40px;
+    background-color: #332e2b;
+    z-index: 100;
 }
 
 /* style of match image */
 #imgMatchSign {
     position: fixed;
-    /* so it's outside of the screen */
     top: 110vh;
     left: 50vw;
     background-color: #332e2b;
-    transition-property: top, opacity;
-    transition-duration: 1.5s;
-    opacity: 0;
+    transition-property: top;
+    opacity: 0.8;
+    transition-duration: 1.2s;
     z-index: -1;
 }
 
@@ -165,7 +166,6 @@ button:hover {
     top: 50vh;
     /* So its top and left are exactly in the middle of the screen */
     transform: translateX(-50%) translateY(-50%);
-    opacity: 1;
     z-index: 100;
 }
 
@@ -207,8 +207,42 @@ footer ul a img:hover {
 /* Media Queries */
 
 /* Viewports between 320px and 480px wide */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 1200px) {
     .card {
-        background: #949494;
+        flex-basis: calc(20% - 20px);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        flex-basis: calc(30% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .card {
+        width: calc(33.33% - 20px);
+        height: calc(33.33% - 20px);
+        margin: 10px;
+    }
+
+    h1,
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
     }
 }
