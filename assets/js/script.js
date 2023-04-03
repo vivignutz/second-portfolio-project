@@ -17,9 +17,6 @@ let matchSign = document.querySelector("#match");
 //** variable to count the matches */
 let matches = 0;
 
-//** img that shows when the game is over */
-let modal = document.querySelector("#gameOver");
-
 //** game over */
 let modalGameOver = document.querySelector("#imgGameOver");
 
@@ -172,6 +169,7 @@ function matchCardSign() {
 }
 
 //window.setTimeout(function () { gameOver(); }, 2000)
+
 //** to bring the modal to the front */
 function gameOver() {
     modalGameOver.style.zIndex = 10;

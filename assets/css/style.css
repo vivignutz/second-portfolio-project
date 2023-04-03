@@ -154,7 +154,7 @@ button:hover {
     /* so it's outside of the screen */
     top: 110vh;
     left: 50vw;
-    background-color: #332e2eb2;
+    background-color: #332e2b;
     transition-property: top, opacity;
     transition-duration: 1.5s;
     opacity: 0;
