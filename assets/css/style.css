@@ -26,17 +26,6 @@ p {
     text-align: center;
 }
 
-/* #main {
-    width: 640px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
-
-
 #container {
     width: 420px;
     border: 1px solid #757272;
@@ -46,7 +35,6 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
-    /* gap: 1rem; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -59,7 +47,6 @@ p {
     flex-shrink: 0;
     border-radius: 10px;
     perspective: 600px;
-    background-size: cover;
 }
 
 /* Button Restart */
@@ -87,18 +74,18 @@ button:hover {
     position: absolute;
     border-radius: 10px;
     transition: all 1s;
-    background-size: cover;
+    background-size: contain;
 }
 
 .back {
     background: url("../images/back_face.jpg");
-    background-size: cover;
+    background-size: contain;
 }
 
 .back.flipped {
     transform: rotateY(180deg);
     backface-visibility: hidden;
-    background-size: cover;
+    background-size: contain;
 }
 
 .front {
@@ -113,7 +100,7 @@ button:hover {
 }
 
 .face.flipped {
-    background-size: cover;
+    background-size: contain;
 }
 
 .card:hover {
@@ -141,11 +128,10 @@ button:hover {
 }
 
 #imgGameOver {
-    margin-top: 330px;
+    margin-top: 120px;
     opacity: 0.8;
     width: 80%;
     min-width: 300px;
-    padding: 40px;
     background-color: #332e2b;
     z-index: 100;
 }

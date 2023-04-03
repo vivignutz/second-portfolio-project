@@ -67,6 +67,7 @@ function startGame() {
         //** aditioning images ids to the cards */
         frontFaces[i].style.background = "url('" + images[i].src + "')";
         frontFaces[i].setAttribute("id", images[i].id);
+        frontFaces[i].style.backgroundSize = "contain";
     }
 
     //** after reorganizing the game to play again,
@@ -179,9 +180,9 @@ function matchCardSign() {
 //** to bring the modal to the front */
 function gameOver() {
     imgGameOver.style.zIndex = "10";
-    modalGameOver.style.zIndex = 10
+    modalGameOver.style.zIndex = "10";
     imgGameOver.addEventListener("click", startGame, false);
-    console.log("modalGameOver");
+    /*console.log("modalGameOver");*/
 }
 
 //** Restart Game */

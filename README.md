@@ -150,7 +150,9 @@ So, by using the game, the user would stay longer inside of a website.
     
     - Than the cards will be sorted again in a loop, and the game returns to the start.
 
-[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/modal_all_matches.jpg)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/modal_all_matches.jpg)
+[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/modal_all_matches.png)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/modal_all_matches.png)
+
+[![alt text](https://github.com/vivignutz/second-portfolio-project/raw/main/assets/images/modal_all_matches_small.png)](https://github.com/vivignutz/second-portfolio-project/blob/main/assets/images/modal_all_matches_small.png)
    
 
 -   **Metadata**
