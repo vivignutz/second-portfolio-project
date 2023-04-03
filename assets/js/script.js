@@ -18,7 +18,10 @@ let matchSign = document.querySelector("#match");
 let matches = 0;
 
 //** game over */
-let modalGameOver = document.querySelector("#imgGameOver");
+let imgGameOver = document.querySelector("#imgGameOver");
+
+
+let modalGameOver = document.getElementById("modalGameOver");
 
 //** sign when match happens */
 let imgMatchSign = document.querySelector("#imgMatchSign");
@@ -68,8 +71,9 @@ function startGame() {
 
     //** after reorganizing the game to play again,
     // inserted value zIndex -2 to come to back of page again */
-    modalGameOver.style.zIndex = -2;
-    modalGameOver.removeEventListener("click", startGame, false);
+    imgGameOver.style.zIndex = "-2";
+    modalGameOver.style.zIndex = "-2"
+    imgGameOver.removeEventListener("click", startGame, false);
 }
 
 //** shiffling numbers for cards distribution again */
@@ -156,6 +160,8 @@ function flipCard() {
 function gameRestart() {
     startGame();
     flipCard();
+    modalGameOver.removeAttribute("style")
+
 }
 
 //** to bring th match img to the front when cards matches */
@@ -172,8 +178,10 @@ function matchCardSign() {
 
 //** to bring the modal to the front */
 function gameOver() {
-    modalGameOver.style.zIndex = 10;
-    modalGameOver.addEventListener("click", startGame, false);
+    imgGameOver.style.zIndex = "10";
+    modalGameOver.style.zIndex = 10
+    imgGameOver.addEventListener("click", startGame, false);
+    console.log("modalGameOver");
 }
 
 //** Restart Game */
