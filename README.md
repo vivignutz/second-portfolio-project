@@ -2,7 +2,7 @@
 
 # [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#memory-card-game-tidbits-about-brazil)Memory Card Game: Tidbits about Brazil
 
-The live link can be found [here](https://vivignutz.github.io/second-portfolio-project/).
+The live link can be found Here: https://vivignutz.github.io/second-portfolio-project/
 
 ## [](https://github.com/vivignutz/second-portfolio-project/blob/main/README.md#introduction)Introduction
 
